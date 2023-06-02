@@ -40,6 +40,7 @@ public class UserDAO {
             return user;
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Something went wrong.");
             return null;
         }
     }
@@ -59,6 +60,8 @@ public class UserDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+
+            System.out.println("Something went wrong.");
         }
         return null;
     }
@@ -72,6 +75,7 @@ public class UserDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Something went wrong.");
         }
     }
 
@@ -91,6 +95,7 @@ public class UserDAO {
             return users;
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Something went wrong.");
             return null;
         }
     }
@@ -112,6 +117,7 @@ public class UserDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Something went wrong.");
         }
     }
 
